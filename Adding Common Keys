@@ -1,0 +1,13 @@
+def commonKey(dict1, dict2):
+    '''dict1, dict2 are the two dictionaries
+    print the required dictionary'''
+     
+    dict3 = {}
+  
+    #YOUR CODE GOES HERE
+    for i in dict1:
+        if i in dict2:
+            dict3[i] = dict2[i] + dict1[i]
+        else:
+            pass
+    print(dict3)
