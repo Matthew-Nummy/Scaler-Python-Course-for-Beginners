@@ -1,0 +1,18 @@
+def unique_count(tup):
+    ''' input:tup-indicates the tuple
+    output:Print the unique elements and their frequency'''
+    
+    # YOUR CODE GOES HERE
+    freq = {}
+    for i in tup:
+        if type(i) == list:
+            i = tuple(i)
+        if i not in freq:
+            freq[i] = 1
+        else:
+            freq[i] += 1
+    for key, value in freq.items():
+        if type(key) == tuple:
+            key = list(key)
+
+        print( key, ":", value )
