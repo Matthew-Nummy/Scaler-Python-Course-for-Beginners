@@ -1,0 +1,7 @@
+def returnSum(dict):
+    sum = 0
+    # PRINT THE SUM OF VALUES
+    # YOUR CODE GOES HERE
+    for i in dict:
+        sum += dict[i]
+    print(sum)
