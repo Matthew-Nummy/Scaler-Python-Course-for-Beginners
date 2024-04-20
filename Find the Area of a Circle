@@ -1,0 +1,10 @@
+def circle_area(r):
+    ans=None
+    '''input: r = A numerical value as radius
+    output: Return the area of circle as ans upto 2 decimal places'''
+    # YOUR CODE GOES HERE
+    area = 3.14159 * (r ** 2)
+    ans = round(area, 2)
+
+
+    return ans
