@@ -1,0 +1,11 @@
+def set_operation(sent1,sent2):
+    ''' input:sent1,sent2-two sentences taken as inputs
+         output:return the sum of length of unique words.'''
+    
+    # YOUR CODE GOES HERE
+    words_sent1 = sent1.split()
+    words_sent2 = sent2.split()
+    unique_words_sent1 = set(words_sent1)
+    unique_words_sent2 = set(words_sent2)
+    unique_words_total = len(unique_words_sent1) + len(unique_words_sent2)
+    return unique_words_total
