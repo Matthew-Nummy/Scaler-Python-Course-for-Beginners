@@ -1,0 +1,14 @@
+def odd_even_split_tuple(tup):
+     ''' input:tup-indicates the tuple
+     Output:print two tuples one for even indexed and odd indexed in the given output format'''
+    
+     # YOUR CODE GOES HERE
+     even = []
+     odd = []
+     for i in range(len(tup)):
+          if i % 2 != 0:
+               even.append(tup[i])
+          else:
+               odd.append(tup[i])
+     print('Odd:', tuple(odd))
+     print('Even:', tuple(even))
